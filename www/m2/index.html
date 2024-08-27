@@ -1,11 +1,107 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>m2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
 </head>
+
 <body>
-  <h1>m2のドキュメントルート</h1>
+    <header>
+        <h1><a href="./index.html">Quantum Games</a></h1>
+        <div class="nav">
+            <a href="./index.html" class="nav-1">トップ</a>
+            <a href="./game-explanation.html" class="nav-2">ゲーム紹介</a>
+            <a href="dummy.html" class="nav-3">お問い合わせ</a>
+            <a href="dummy.html" class="nav-4">サインイン</a>
+        </div>
+        <div class="hum">
+            <div class="border"></div>
+            <div class="border"></div>
+            <div class="border"></div>
+        </div>
+        <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasLabel">メニュー</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="toggle-menu">
+                    <a href="./index.html" class="nav-1">トップ</a>
+                    <a href="./game-explanation.html" class="nav-2">ゲーム紹介</a>
+                    <a href="dummy.html" class="nav-3">お問い合わせ</a>
+                    <a href="dummy.html" class="nav-4">サインイン</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="slide">
+                <img src="./天地遊龍記/tenchi-yuryuki-3.jpg" alt="">
+                <img src="./image-3.jpg" alt="">
+                <img src="./image-2.jpg" alt="">
+            </div>
+        </section>
+
+        <div class="container">
+            <section>
+                <h2 class="main-title">新たなワクワクを探そう</h2>
+                <div class="company">
+                    QuantumGamesは、次世代のインタラクティブエンターテインメントを創造することを使命とした、革新的なゲーム開発会社です。私たちのチームは、量子力学や先端技術にインスパイアされた独自のゲーム体験を提供することを目指しています。
+                </div>
+                <ul class="company-explanation">
+                    <li>
+                        <h3>ミッション</h3>
+                        <p>
+                            QuantumGamesは、ゲームの限界を超える作品を生み出すことを目標に、プレイヤーに驚きと感動を与えるゲーム開発に取り組んでいます。私たちは、ストーリーテリング、グラフィック、ゲームプレイのすべてにおいて、革新と創造性を追求し、誰もが夢中になれるゲームを提供します。
+                        </p>
+                    </li>
+                    <li>
+                        <h3>未来への挑戦</h3>
+                        <p>
+                            私たちは、ゲーム業界に革命を起こすべく、最新技術を駆使したプロジェクトに挑戦し続けます。Quantum
+                            Gamesは、プレイヤーと共に歩む未来を築き、世界中にインスピレーションを与える存在でありたいと考えています。
+                        </p>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <div class="container text-center">
+                    <h3>新作情報ピックアップ</h3>
+                    <div class="row row-sm">
+                        <div class="col ">
+                            <div class="game-title">Escape Runner</div>
+                            <div class="game-explanation">
+                                EscapeRunnerは、リアルタイムで変化する環境を舞台に展開します。プレイヤーは、複雑な迷路や緊迫したチェイスシーンを突破し、謎解きやパズルを解くことで進行します。各ステージでは、スピードと正確さが求められ、ミスを許さない過酷な挑戦が待ち受けています。成功するためには、施設内に隠されたヒントやアイテムを見つけ出し、巧みに活用しなければなりません。
+                            </div>
+                            <a href="./dummy.html" class="game-btn">今すぐダウンロード</a>
+                        </div>
+                        <div class="col">
+                            <img class="game-img" src="./EscapeRunner/escape-runner-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <h3 class="release-title">新作リリース予定</h3>
+                    <div class="release">
+                        <img src="./CircuitBreakers/circuit-breakers-1.jpg" alt="">
+                        <img src="./FactoryWorld/factory-world-2.jpg" alt="">
+                        <img src="./ライオンキング/raion-king-1.jpg" alt="">
+                    </div>
+                    <a href="./game-explanation.html" class="release-btn">一覧はこちら</a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        Copyright&copy; QuantumGames. All rights reserved.
+    </footer>
+    <button class="back-header">▲</button>
+    <script src="bootstrap.min.js"></script>
+    <script src="./index.js"></script>
 </body>
+
 </html>
