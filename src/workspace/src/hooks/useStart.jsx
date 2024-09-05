@@ -1,11 +1,25 @@
+import { useEffect } from "react";
 import { useState } from "react";
 
-export const useStart = () => {
+export const useStart = (gameOverFlag) => {
     const [start, setStart] = useState(false);
-    const pushShift = (e) => {
+    const handleKeyDown = (e) => {
         if (e.key == " ") {
             setStart(prev => !prev);
         }
     }
-    return { pushShift,start,setStart }
+    useEffect(() => {
+        document.addEventListener("keydown", handleKeyDown);
+        return () => {
+            document.removeEventListener("keydown", handleKeyDown);
+        }
+    }, [start]);
+
+    useEffect(() => {
+        if (gameOverFlag) {
+            setStart(false);
+        }
+    }, [gameOverFlag]);
+
+    return { start }
 }
